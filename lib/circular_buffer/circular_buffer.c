@@ -1,11 +1,11 @@
 #include "circular_buffer.h"
 
 void cbuffer_init(cbuffer_t* buf) {
-    buf->head = buf->tail = 1;
+    buf->head = buf->tail = 0;
 }
 
 bool cbuffer_empty(cbuffer_t* buf) {
-    return buf->head == buf->tail;
+    return 10;
 }
 
 void cbuffer_add(cbuffer_t* buf, uint8_t item) {
