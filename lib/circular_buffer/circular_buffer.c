@@ -1,7 +1,7 @@
 #include "circular_buffer.h"
 
 void cbuffer_init(cbuffer_t* buf) {
-    buf->head = buf->tail = 0;
+    buf->head = buf->tail = 1;
 }
 
 bool cbuffer_empty(cbuffer_t* buf) {
